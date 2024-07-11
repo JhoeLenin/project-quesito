@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="be5452f1-a664-4921-a469-2e0bac7ed6de" name="Default Changelist" comment="commit con algunas modificaciones">
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/dashboard/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/geografico/static/localidades/js/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/geografico/static/localidades/js/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/geografico/views/localidades/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/geografico/views/localidades/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/body.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sidebar.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JupyterTrust" id="231534fe-2ebe-467b-98ee-d0d5c28795d4" />
+  <component name="ProjectId" id="1hhaLV5HBwasN63QJswZfqF5HCT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/apps/solicitudes/templates/solicitudes" />
+      <recent name="$PROJECT_DIR$/apps/usuarios/static" />
+      <recent name="$PROJECT_DIR$/apps/usuarios/templates" />
+      <recent name="$PROJECT_DIR$/apps/usuarios/views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.app">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python">
+      <module name="sira" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <module name="sira" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../env/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="127.0.0.1" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="app" type="Python.DjangoServer" factoryName="Django server">
+      <module name="sira" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="config.settings" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../env/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="127.0.0.1" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Django Server.app" />
+      <item itemvalue="Python.app" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task id="LOCAL-00001" summary="commit">
+      <created>1600372979573</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600372979573</updated>
+    </task>
+    <task id="LOCAL-00002" summary="commit CRUD Universidad - Facultad - Sedes">
+      <created>1600387957638</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600387957638</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="be5452f1-a664-4921-a469-2e0bac7ed6de" name="Default Changelist" comment="commit CRUD Universidad - Facultad - Sedes" />
+      <created>1600465725610</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600465725610</updated>
+      <workItem from="1600465727521" duration="5094000" />
+      <workItem from="1600723294743" duration="6523000" />
+      <workItem from="1600780903613" duration="886000" />
+      <workItem from="1600790650099" duration="2176000" />
+      <workItem from="1600897549182" duration="3517000" />
+      <workItem from="1600901918278" duration="30000" />
+      <workItem from="1600944906927" duration="3763000" />
+      <workItem from="1600976128754" duration="10915000" />
+      <workItem from="1601032920387" duration="10249000" />
+      <workItem from="1601056237458" duration="2811000" />
+      <workItem from="1601068072273" duration="909000" />
+      <workItem from="1601133251572" duration="15000" />
+      <workItem from="1601295094191" duration="7915000" />
+      <workItem from="1601317529976" duration="18449000" />
+      <workItem from="1601377684011" duration="10106000" />
+      <workItem from="1601408904073" duration="6948000" />
+      <workItem from="1601419973638" duration="2245000" />
+      <workItem from="1601492710821" duration="18319000" />
+      <workItem from="1601556696095" duration="3189000" />
+      <workItem from="1601570004607" duration="21406000" />
+      <workItem from="1601636897468" duration="5404000" />
+      <workItem from="1601656005380" duration="1113000" />
+      <workItem from="1601661430082" duration="17278000" />
+      <workItem from="1601680475291" duration="2944000" />
+      <workItem from="1601919122717" duration="3908000" />
+      <workItem from="1601984456045" duration="6959000" />
+      <workItem from="1602006142996" duration="18794000" />
+      <workItem from="1602028354097" duration="599000" />
+      <workItem from="1602093054496" duration="9748000" />
+      <workItem from="1602153655664" duration="8278000" />
+      <workItem from="1602186265191" duration="11671000" />
+      <workItem from="1602199044113" duration="589000" />
+      <workItem from="1602251618658" duration="9062000" />
+      <workItem from="1602274606384" duration="11785000" />
+      <workItem from="1602688309183" duration="3851000" />
+      <workItem from="1602708999596" duration="313000" />
+      <workItem from="1602764070528" duration="4813000" />
+      <workItem from="1602768900803" duration="130000" />
+      <workItem from="1602865746203" duration="821000" />
+      <workItem from="1602875563192" duration="4617000" />
+      <workItem from="1602880198081" duration="187000" />
+      <workItem from="1602880550799" duration="23000" />
+      <workItem from="1603118660629" duration="1775000" />
+      <workItem from="1603137759453" duration="210000" />
+      <workItem from="1603483484996" duration="1849000" />
+      <workItem from="1603733240426" duration="16766000" />
+      <workItem from="1604092031951" duration="656000" />
+      <workItem from="1604949826386" duration="615000" />
+      <workItem from="1605042433129" duration="1066000" />
+      <workItem from="1605179004501" duration="1189000" />
+      <workItem from="1607369592964" duration="4541000" />
+      <workItem from="1607379682942" duration="3762000" />
+      <workItem from="1607383604082" duration="268000" />
+      <workItem from="1607542208230" duration="14844000" />
+      <workItem from="1607685087087" duration="8156000" />
+      <workItem from="1607705376102" duration="24064000" />
+      <workItem from="1607773148236" duration="18944000" />
+      <workItem from="1607795337938" duration="19072000" />
+      <workItem from="1607818930115" duration="1166000" />
+      <workItem from="1607864832268" duration="9883000" />
+      <workItem from="1607893813499" duration="9198000" />
+      <workItem from="1607952232487" duration="4672000" />
+      <workItem from="1607963939171" duration="2726000" />
+      <workItem from="1618856008965" duration="1769000" />
+      <workItem from="1618858475447" duration="2296000" />
+      <workItem from="1618862510295" duration="7176000" />
+      <workItem from="1618919771174" duration="13771000" />
+      <workItem from="1619042903037" duration="1682000" />
+      <workItem from="1619133654293" duration="8000" />
+      <workItem from="1619135217820" duration="48000" />
+      <workItem from="1619302407086" duration="4442000" />
+      <workItem from="1619453058482" duration="2202000" />
+      <workItem from="1619565592260" duration="12000" />
+      <workItem from="1619566010196" duration="2000" />
+      <workItem from="1619566598488" duration="27000" />
+      <workItem from="1619570122667" duration="54000" />
+      <workItem from="1619609070145" duration="37000" />
+      <workItem from="1620129430523" duration="1853000" />
+      <workItem from="1620151887157" duration="168000" />
+      <workItem from="1621358466054" duration="3164000" />
+      <workItem from="1621535262676" duration="640000" />
+      <workItem from="1623278966961" duration="482000" />
+      <workItem from="1623365219327" duration="40000" />
+    </task>
+    <task id="LOCAL-00003" summary="Commit mejoras en el template y login con Mixins">
+      <created>1600901794423</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600901794423</updated>
+    </task>
+    <task id="LOCAL-00004" summary="commit 24-09-2020">
+      <created>1600948464467</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600948464467</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Commit con usuarios_List">
+      <created>1601035765332</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601035765332</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Commit 01-10-2020 Cambios en el template, usuarios, y con las solicitudes (tipos y motivos)">
+      <created>1601557675311</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1601557675312</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Commit 01-10-2020 Cambios en el template, usuarios, y con las solicitudes (tipos y motivos) - parche para localidades con una funcion js submit_whitout_ajax">
+      <created>1601559414751</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1601559414751</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Commit con carreras, tipos de carreras, materias, planes de estudio, periodos de cursado, años de cursado">
+      <created>1601593473850</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1601593473850</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Commit con carreras, tipos de carreras, materias, planes de estudio, periodos de cursado, años de cursado">
+      <created>1601593579011</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1601593579011</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Commit con CRUD Academico (Hasta Materias, resta comisiones y tipos de comisiones)">
+      <created>1601937656076</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1601937656076</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Commit con CRUD de Solicitudes, Faltan Validaciones de fechas, select anidado de carreras y materias, autocompletar los campos si el DNI esta registrado y revisar el tema fecha YYYY/MM/DD a DD/MM/YYYY">
+      <created>1602026742829</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1602026742829</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Commit con Solicitudes de Reservas con controles, falta pulir algunos detalles pero funciona todo ok.&#10;Se agrego la Libreria tempus_dominus al entorno virtual, porque generaba conflictos con otra libreria de datepicker.">
+      <created>1602286290138</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1602286290138</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Commit con Solicitudes de Reservas con controles, falta pulir algunos detalles pero funciona todo ok.&#10;Se agrego la Libreria tempus_dominus al entorno virtual, porque generaba conflictos con otra libreria de datepicker.">
+      <created>1602286340788</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1602286340788</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Commit modificacion campos Solicitudes">
+      <created>1602865884779</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1602865884779</updated>
+    </task>
+    <task id="LOCAL-00015" summary="commit con meetings_api al 19/10/2020">
+      <created>1603137951424</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1603137951424</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Commit con CRUD restantes realizados (Calendario Academico, Turnos de Examen, Plataformas y Salas Virtuales)">
+      <created>1603748684230</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1603748684231</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Commit con CRUD restantes realizados (Calendario Academico, Turnos de Examen, Plataformas y Salas Virtuales)">
+      <created>1603748951854</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1603748951854</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Commit 07-12 con API webex y superposicion de reservas">
+      <created>1607383830064</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1607383830064</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Commit 07-12 con API webex y superposicion de reservas">
+      <created>1607383855308</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1607383855308</updated>
+    </task>
+    <task id="LOCAL-00020" summary="commit con estado de solicitud, y datos de email">
+      <created>1607691149010</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1607691149010</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Commit with solicitudes_reservas_virtuales">
+      <created>1607805874674</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1607805874675</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Commit with solicitudes_reservas_virtuales_with_lib_pdf">
+      <created>1607805922754</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1607805922754</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Commit with solicitudes_reservas_virtuales_with_lib_pdf">
+      <created>1607806173257</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1607806173257</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Commit with solicitudes_reservas_virtuales_with_lib_pdf">
+      <created>1607808004602</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1607808004602</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Commit with solicitudes_reservas_virtuales_with_lib_pdf">
+      <created>1607808305227</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1607808305227</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Commit with solicitudes_reservas_virtuales_with_lib_pdf">
+      <created>1607809528237</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1607809528237</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Commit 12-12">
+      <created>1607819465357</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1607819465357</updated>
+    </task>
+    <task id="LOCAL-00028" summary="commit 13-12-2020">
+      <created>1607873525127</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1607873525127</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Commit 13-12-2020 entrega p/TrabajoFinal">
+      <created>1607902855176</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1607902855176</updated>
+    </task>
+    <task id="LOCAL-00030" summary="commit con algunas modificaciones">
+      <created>1620152027213</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1620152027213</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="commit" />
+    <MESSAGE value="commit CRUD Universidad - Facultad - Sedes" />
+    <MESSAGE value="Commit mejoras en el template y login con Mixins" />
+    <MESSAGE value="commit 24-09-2020" />
+    <MESSAGE value="Commit con usuarios_List" />
+    <MESSAGE value="Commit 01-10-2020 Cambios en el template, usuarios, y con las solicitudes (tipos y motivos)" />
+    <MESSAGE value="Commit 01-10-2020 Cambios en el template, usuarios, y con las solicitudes (tipos y motivos) - parche para localidades con una funcion js submit_whitout_ajax" />
+    <MESSAGE value="Commit con carreras, tipos de carreras, materias, planes de estudio, periodos de cursado, años de cursado" />
+    <MESSAGE value="Commit con CRUD Academico (Hasta Materias, resta comisiones y tipos de comisiones)" />
+    <MESSAGE value="Commit con CRUD de Solicitudes, Faltan Validaciones de fechas, select anidado de carreras y materias, autocompletar los campos si el DNI esta registrado y revisar el tema fecha YYYY/MM/DD a DD/MM/YYYY" />
+    <MESSAGE value="Commit con Solicitudes de Reservas con controles, falta pulir algunos detalles pero funciona todo ok.&#10;Se agrego la Libreria tempus_dominus al entorno virtual, porque generaba conflictos con otra libreria de datepicker." />
+    <MESSAGE value="Commit modificacion campos Solicitudes" />
+    <MESSAGE value="commit con meetings_api al 19/10/2020" />
+    <MESSAGE value="Commit con CRUD restantes realizados (Calendario Academico, Turnos de Examen, Plataformas y Salas Virtuales)" />
+    <MESSAGE value="Commit 07-12 con API webex y superposicion de reservas" />
+    <MESSAGE value="commit con estado de solicitud, y datos de email" />
+    <MESSAGE value="Commit with solicitudes_reservas_virtuales" />
+    <MESSAGE value="Commit with solicitudes_reservas_virtuales_with_lib_pdf" />
+    <MESSAGE value="Commit 12-12" />
+    <MESSAGE value="commit 13-12-2020" />
+    <MESSAGE value="Commit 13-12-2020 entrega p/TrabajoFinal" />
+    <MESSAGE value="commit con algunas modificaciones" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit con algunas modificaciones" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/app$app.coverage" NAME="app Coverage Results" MODIFIED="1619570123870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/app$views.coverage" NAME="views Coverage Results" MODIFIED="1599517290797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/geografico/views/paises" />
+    <SUITE FILE_PATH="coverage/app$Test__.coverage" NAME="Test:  Coverage Results" MODIFIED="1600371477255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/sira$app.coverage" NAME="app Coverage Results" MODIFIED="1623278967950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/app$tests.coverage" NAME="tests Coverage Results" MODIFIED="1599692603928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/geografico" />
+  </component>
+</project>

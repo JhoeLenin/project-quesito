@@ -1,0 +1,52 @@
+{% extends 'body.html' %}
+{% load widget_tweaks %}
+{% block content %}
+    <form method="post" action=".">
+        <div class="card card-default">
+            <div class="card-header">
+                <h3 class="card-title">
+                    <i class="fas fa-search"></i>
+                    {{ title }}
+                </h3>
+            </div>
+            <div class="card-body">
+                {% csrf_token %}
+                <input type="hidden" name="action" value="{{ action }}">
+                {% if form.errors %}
+                    <div class="alert alert-danger alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                        <h5><i class="icon fas fa-ban"></i> Ha ocurrido un error al querer guardar el registro</h5>
+                        <ul>
+                            {% for field in form %}
+                                {% for error in field.errors %}
+                                    <li>{{ error }}</li>
+                                {% endfor %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+
+                <!--
+                <div class="alert alert-danger alert-dismissible">
+                    Eliminar el Registro {{ object.nombre }}
+                </div>
+                -->
+
+            </div>
+            <div class="card-footer">
+                <a href="{{ list_url }}" class="btn btn-danger btn-flat">
+                    <i class="fas fa-backspace"></i> Volver
+                </a>
+            </div>
+        </div>
+    </form>
+    <script>
+        $('form').on('submit', function (e) {
+            e.preventDefault();
+            var parameters = $(this).serializeArray();
+            submit_with_ajax(window.location.pathname, 'Notificación!', '¿Estas seguro de eliminar el siguiente registro?', parameters, function () {
+                location.href = '{{ list_url }}';
+            });
+        });
+    </script>
+{% endblock %}
