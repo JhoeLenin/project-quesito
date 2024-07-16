@@ -44,7 +44,7 @@ class MinisterioController extends Controller
         $ministerio->fecha_ingreso = $request->fecha_ingreso;
         $ministerio->save();
 
-        return redirect()->route('ministerios.index')->with('mensaje', 'se registró el Ministerio de manera correcta');
+        return redirect()->route('ministerios.index')->with('mensaje', 'Ministerio creado exitosamente');
     }
 
     /**
@@ -84,7 +84,7 @@ class MinisterioController extends Controller
         $ministerio->fecha_ingreso = $request->fecha_ingreso;
         $ministerio->save();
 
-        return redirect()->route('ministerios.index')->with('mensaje', 'se actualizó el Ministerio de manera correcta');
+        return redirect()->route('ministerios.index')->with('mensaje', 'Ministerio actualizado exitosamente');
     }
 
     /**
@@ -93,6 +93,6 @@ class MinisterioController extends Controller
     public function destroy($id)
     {
     Ministerio::destroy($id);
-    return redirect()->route('ministerios.index')->with('mensaje', 'se eliminó  el Ministerio de manera correcta');
+    return redirect()->route('ministerios.index')->with('mensaje', 'Ministerio eliminado exitosamente');
     }
 }

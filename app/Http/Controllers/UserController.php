@@ -49,7 +49,7 @@ class UserController extends Controller
         $usuario->estado = '1';
         $usuario->save();
 
-        return redirect()->route('usuarios.index')->with('mensaje', 'Se registró de manera correcta');
+        return redirect()->route('usuarios.index')->with('mensaje', 'Usuario creado exitosamente');
     }
 
     /**
@@ -81,7 +81,7 @@ class UserController extends Controller
         $usuario->password = Hash::make($request['password']);
         $usuario->save();
 
-        return redirect()->route('usuarios.index')->with('mensaje', 'Se actualizó de manera correcta');
+        return redirect()->route('usuarios.index')->with('mensaje', 'Usuario actualizado exitosamente');
     }
 
     /**
@@ -92,6 +92,6 @@ class UserController extends Controller
 
         User::destroy($id);
 
-        return redirect()->route('usuarios.index')->with('mensaje', 'Se eliminó de manera correcta');
+        return redirect()->route('usuarios.index')->with('mensaje', 'Usuario eliminado exitosamente');
     }
 }

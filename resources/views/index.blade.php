@@ -26,6 +26,8 @@
 
             </div>
         @endcan
+
+        @can('becarios')
             <div class="col-lg-3 col-6">
                 <div class="small-box bg-success">
                     <div class="inner">
@@ -46,6 +48,9 @@
                 </div>
 
             </div>
+        @endcan
+
+        @can('usuarios')
             <div class="col-lg-3 col-6">
                 <div class="small-box bg-warning">
                     <div class="inner">
@@ -64,8 +69,11 @@
                     <a href="{{ url('usuarios') }}" class="small-box-footer">Más información <i
                             class="fas fa-arrow-circle-right"></i></a>
                 </div>
+        @endcan
 
-            </div>
+
+        @can('asistencias')
+        </div>
             <div class="col-lg-3 col-6">
                 <div class="small-box bg-primary">
                     <div class="inner">
@@ -87,6 +95,7 @@
 
             </div>
         </div>
+        @endcan 
 
     </div>
 @endsection

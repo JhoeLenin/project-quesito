@@ -50,7 +50,7 @@ class BecarioController extends Controller
         $becario->fecha_ingreso = date('Y-m-d');
         $becario->save();
 
-        return redirect()->route('becarios.index')->with('mensaje', 'Se registró de manera correcta');
+        return redirect()->route('becarios.index')->with('mensaje', 'Becario creado exitosamente');
     }
 
     public function show($id)
@@ -93,7 +93,7 @@ class BecarioController extends Controller
         }
 
         $becario->save();
-        return redirect()->route('becarios.index')->with('mensaje', 'Becario actualizado con éxito');
+        return redirect()->route('becarios.index')->with('mensaje', 'Becario actualizado exitosamente');
     }
 
     public function destroy($id)
@@ -101,6 +101,6 @@ class BecarioController extends Controller
         $becario = Becario::find($id);
         Storage::delete('public/' . $becario->fotografia);
         $becario->delete();
-        return redirect()->route('becarios.index')->with('mensaje', 'Becario eliminado con éxito');
+        return redirect()->route('becarios.index')->with('mensaje', 'Becario eliminado exitosamente');
     }
 }

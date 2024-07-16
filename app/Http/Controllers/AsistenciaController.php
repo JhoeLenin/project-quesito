@@ -73,7 +73,7 @@ class AsistenciaController extends Controller
         $asistencia = Asistencia::create($request->all());
 
         return redirect()->route('asistencias.index')
-            ->with('success', 'Asistencia created successfully.');
+            ->with('success', 'Asistencia creada exitosamente');
     }
 
     /**
@@ -116,7 +116,7 @@ class AsistenciaController extends Controller
         $asistencia->update($request->all());
 
         return redirect()->route('asistencias.index')
-            ->with('success', 'Asistencia updated successfully');
+            ->with('success', 'Asistencia actualizada exitosamente');
     }
 
     /**
@@ -129,6 +129,6 @@ class AsistenciaController extends Controller
         $asistencia = Asistencia::find($id)->delete();
 
         return redirect()->route('asistencias.index')
-            ->with('success', 'Asistencia deleted successfully');
+            ->with('success', 'Asistencia eliminada exitosanente');
     }
 }

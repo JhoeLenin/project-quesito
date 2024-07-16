@@ -5,9 +5,17 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Inicio de sesión') }}</div>
-
-                <div class="card-body">
+                <div class="card-header" style="text-align: center">
+                <a class="navbar-brand" href="{{ url('/login') }}">
+                    <p>Inicio de sesión</p>
+                    <strong>QUESITO</strong>
+                    <img src="{{ url('dist/img/logo.png') }}" class="img-circle elevation-3"
+                            alt="Logo Quesito" style>
+                </a>
+                </div>
+                
+                <div class="card-body" style="">
+                    <p style="text-align: center">Ingrese sus credenciales:</p>
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
@@ -45,7 +53,7 @@
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                                     <label class="form-check-label" for="remember">
-                                        {{ __('Recordarme') }}
+                                        {{ __('Recuérdame') }}
                                     </label>
                                 </div>
                             </div>
