@@ -1,11 +1,9 @@
 @extends('layouts.admin')
 
-
-
 @section('content')
     <div class="content" style="margin-left: 20px">
 
-        <h1 class="mb-3">Listado de miembros</h1>
+        <h1 class="mb-3">Listado de becarios</h1>
 
         @if ($message = Session::get('mensaje'))
             <script>
@@ -21,10 +19,10 @@
             <div class="col-md-12">
                 <div class="card card-outline card-primary">
                     <div class="card-header">
-                        <h2 class="card-title"><b>Miembros Registrados</b></h2>
+                        <h2 class="card-title"><b>Becarios Registrados</b></h2>
                         <div class="card-tools">
-                            <a href="{{ url('/miembros/create') }}" class="btn btn-primary">
-                                <i class="bi bi-person-fill-add mr-2"></i>Agregar nuevo miembro
+                            <a href="{{ url('/becarios/create') }}" class="btn btn-primary">
+                                <i class="bi bi-person-fill-add mr-2"></i>Agregar nuevo becario
                             </a>
                         </div>
                     </div>
@@ -33,6 +31,8 @@
                             <thead>
                                 <tr>
                                     <th>Nro</th>
+                                    <th>Código</th>
+                                    <th>DNI</th>
                                     <th>Nombres y Apellidos</th>
                                     <th>Telefono</th>
                                     <th>Email</th>
@@ -43,26 +43,31 @@
                             </thead>
                             <tbody>
                                 <?php $contador = 0; ?>
-                                @foreach ($miembros as $miembro)
+                                @foreach ($becarios as $becario)
                                     <tr>
                                         <td><?php echo $contador = $contador + 1; ?></td>
-                                        <td>{{ $miembro->nombre_apellido }}</td>
-                                        <td>{{ $miembro->telefono }}</td>
-                                        <td>{{ $miembro->email }}</td>
+                                        <td>{{ $becario->codigo }}</td>
+                                        <td>{{ $becario->dni }}</td>
+                                        <td>{{ $becario->nombre_apellido }}</td>
+                                        <td>{{ $becario->telefono }}</td>
+                                        <td>{{ $becario->email }}</td>
                                         <td>
-                                            <center> <button class="btn btn-success btn-sm" style="border-radius: 20px">Activo</button></center>
+                                            <center><button class="btn btn-success btn-sm"
+                                                    style="border-radius: 20px">Activo</button></center>
                                         </td>
-                                        <td>{{ $miembro->fecha_ingreso }}</td>
+                                        <td>{{ $becario->fecha_ingreso }}</td>
                                         <td style="text-align: center">
                                             <div class="btn-group" role="group" aria-label="Basic example">
-                                                <a href="{{ url('miembros', $miembro->id) }}" type="button"
+                                                <a href="{{ url('becarios', $becario->id) }}" type="button"
                                                     class="btn btn-info"><i class="bi bi-eye-fill"></i></a>
-                                                <a href="{{ route('miembros.edit', $miembro->id) }}" type="button"
+                                                <a href="{{ route('becarios.edit', $becario->id) }}" type="button"
                                                     class="btn btn-warning"><i class="bi bi-pencil-square"></i></a>
-                                                <form action="{{ url('miembros', $miembro->id) }}" method="POST">
+                                                <form action="{{ url('becarios', $becario->id) }}" method="POST">
                                                     @csrf
                                                     {{ method_field('DELETE') }}
-                                                    <button type="submit" onclick="return confirm('¿Seguro que desea borrar este registro?')" class="btn btn-danger">
+                                                    <button type="submit"
+                                                        onclick="return confirm('¿Seguro que desea borrar este registro?')"
+                                                        class="btn btn-danger">
                                                         <i class="bi bi-trash3-fill"></i>
                                                     </button>
                                                 </form>

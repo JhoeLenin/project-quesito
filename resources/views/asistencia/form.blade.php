@@ -7,9 +7,9 @@
             {!! $errors->first('fecha', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
-            {{ Form::label('Miembros') }}
-            {{ Form::select('miembro_id',$miembros, $asistencia->miembro_id, ['class' => 'form-control' . ($errors->has('miembro_id') ? ' is-invalid' : ''), 'placeholder' => 'Buscar miembros']) }}
-            {!! $errors->first('miembro_id', '<div class="invalid-feedback">:message</div>') !!}
+            {{ Form::label('Becarios') }}
+            {{ Form::select('becario_id',$becarios, $asistencia->becario_id, ['class' => 'form-control' . ($errors->has('becario_id') ? ' is-invalid' : ''), 'placeholder' => 'Buscar becarios']) }}
+            {!! $errors->first('becario_id', '<div class="invalid-feedback">:message</div>') !!}
         </div>
 
     </div>

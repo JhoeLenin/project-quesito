@@ -23,7 +23,7 @@ class UserSeeder extends Seeder
             'fecha_ingreso' => now(),
             'estado' => 1,
             'remember_token' => Str::random(10),
-        ])->assignRole('admin');
+        ]);
 
         User::create([
             'name' => 'Raquel Chacón',
@@ -33,6 +33,6 @@ class UserSeeder extends Seeder
             'fecha_ingreso' => now(),
             'estado' => 1,
             'remember_token' => Str::random(10),
-        ])->assignRole('registrador');
+        ]);
     }
 }

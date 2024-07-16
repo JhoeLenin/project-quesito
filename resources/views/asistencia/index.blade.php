@@ -13,7 +13,7 @@
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
                             <span id="card_title">
-                                {{ __('Listado de Asistencia') }}
+                                {{ __('Lista de Asistencia') }}
                             </span>
 
                             <div class="float-right">
@@ -36,8 +36,9 @@
                                 <thead class="thead">
                                     <tr>
                                         <th>Nro</th>
-
                                         <th>Fecha</th>
+                                        <th>Código</th>
+
                                         <th>Miembro</th>
 
                                         <th>Acciones</th>
@@ -47,9 +48,10 @@
                                     @foreach ($asistencias as $asistencia)
                                         <tr>
                                             <td>{{ ++$i }}</td>
-
+                                            
                                             <td>{{ $asistencia->fecha }}</td>
-                                            <td>{{ $asistencia->miembro->nombre_apellido }}</td>
+                                            <td>{{ $asistencia->becario->codigo }}</td>
+                                            <td>{{ $asistencia->becario->nombre_apellido }}</td>
                                             <center>
                                                 <td>
                                                     <form action="{{ route('asistencias.destroy', $asistencia->id) }}"

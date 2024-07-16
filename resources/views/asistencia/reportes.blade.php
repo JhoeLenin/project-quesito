@@ -55,7 +55,7 @@
 
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <label for="">Fecha de Final</label>
+                                                    <label for="">Fecha Final</label>
                                                     <input type="date" name="ff" class="form-control" name=""
                                                         id="">
 

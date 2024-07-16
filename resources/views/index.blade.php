@@ -4,10 +4,11 @@
 
         <h1>Página principal</h1>
         <div class="row">
+        @can('asd')
             <div class="col-lg-3 col-6">
                 <div class="small-box bg-info">
                     <div class="inner">
-
+                        
                         <?php $contador_de_ministerio = 0; ?>
                         @foreach ($ministerios as $ministerio)
                             <?php $contador_de_ministerio = $contador_de_ministerio + 1; ?>
@@ -24,22 +25,23 @@
                 </div>
 
             </div>
+        @endcan
             <div class="col-lg-3 col-6">
                 <div class="small-box bg-success">
                     <div class="inner">
 
-                        <?php $contador_de_miembros = 0; ?>
-                        @foreach ($miembros as $miembro)
-                            <?php $contador_de_miembros = $contador_de_miembros + 1; ?>
+                        <?php $contador_de_becarios = 0; ?>
+                        @foreach ($becarios as $becario)
+                            <?php $contador_de_becarios = $contador_de_becarios + 1; ?>
                         @endforeach
 
-                        <h3><?= $contador_de_miembros ?></h3>
-                        <p>Miembros</p>
+                        <h3><?= $contador_de_becarios ?></h3>
+                        <p>Becarios</p>
                     </div>
                     <div class="icon">
                         <i class="bi bi-people"></i>
                     </div>
-                    <a href="{{ url('miembros') }}" class="small-box-footer">Más información <i
+                    <a href="{{ url('becarios') }}" class="small-box-footer">Más información <i
                             class="fas fa-arrow-circle-right"></i></a>
                 </div>
 
@@ -59,7 +61,7 @@
                     <div class="icon">
                         <i class="bi bi-person-fill-check"></i>
                     </div>
-                    <a href="{{ url('miembros') }}" class="small-box-footer">Más información <i
+                    <a href="{{ url('usuarios') }}" class="small-box-footer">Más información <i
                             class="fas fa-arrow-circle-right"></i></a>
                 </div>
 

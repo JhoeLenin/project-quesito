@@ -236,7 +236,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     <li class="nav-item">
                                         <a href="{{ url('usuarios') }}" class="nav-link">
                                             <i class="bi bi-building"></i>
-                                            <p>Listado de Usuarios</p>
+                                            <p>Lista de Usuarios</p>
                                         </a>
                                     </li>
                                 </ul>
@@ -244,7 +244,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         @endcan
 
                         
-                        @can('ministerios')
+                        @can('asd')
                             <li class="nav-item">
                                 <a href="#" class="nav-link active">
                                     <i class="nav-icon fas">
@@ -253,7 +253,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                                     </i>
                                     <p>
-                                        Ministerios
+                                        Sedes
                                         <i class="right fas fa-angle-left"></i>
                                     </p>
                                 </a>
@@ -261,20 +261,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     <li class="nav-item">
                                         <a href="{{ url('ministerios/create') }}" class="nav-link">
                                             <i class="far fa-circle nav-icon"></i>
-                                            <p>Nuevo Ministerio</p>
+                                            <p>Nueva Sede</p>
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="{{ url('ministerios') }}" class="nav-link">
                                             <i class="bi bi-building"></i>
-                                            <p>Listado de Ministerios</p>
+                                            <p>Lista de Sedes</p>
                                         </a>
                                     </li>
                                 </ul>
                             </li>
                         @endcan
 
-                        @can('miembros')
+                        @can('becarios')
                             <li class="nav-item">
                                 <a href="#" class="nav-link active">
                                     <i class="nav-icon fas">
@@ -289,15 +289,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
-                                        <a href="{{ url('miembros/create') }}" class="nav-link">
+                                        <a href="{{ url('becarios/create') }}" class="nav-link">
                                             <i class="far fa-circle nav-icon"></i>
-                                            <p>Nuevo Miembro</p>
+                                            <p>Nuevo Becario</p>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="{{ url('miembros') }}" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Listado de Miembros</p>
+                                        <a href="{{ url('becarios') }}" class="nav-link">
+                                        <i class="bi bi-building"></i>
+                                            <p>Lista de Becarios</p>
                                         </a>
                                     </li>
                                 </ul>
@@ -326,8 +326,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     </li>
                                     <li class="nav-item">
                                         <a href="{{ url('asistencias') }}" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Listado de Asistencia</p>
+                                        <i class="bi bi-building"></i>
+                                            <p>Lista de Asistencias</p>
                                         </a>
                                     </li>
                                 </ul>
@@ -411,8 +411,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 CHEZO
             </div>
             <!-- Default to the left -->
-            <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights
-            reserved.
+            <strong>Copyright &copy; 2024 <a href="">Quesito</a>.</strong> Todos los derechos reservados.
         </footer>
     </div>
     <!-- ./wrapper -->

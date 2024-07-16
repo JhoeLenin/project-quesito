@@ -9,11 +9,11 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @property $id
  * @property $fecha
- * @property $miembro_id
+ * @property $becario_id
  * @property $created_at
  * @property $updated_at
  *
- * @property Miembro $miembro
+ * @property Miembro $becario
  * @package App
  * @mixin \Illuminate\Database\Eloquent\Builder
  */
@@ -22,7 +22,7 @@ class Asistencia extends Model
     
     static $rules = [
 		'fecha' => 'required',
-		'miembro_id' => 'required',
+		'becario_id' => 'required',
     ];
 
     protected $perPage = 20;
@@ -32,15 +32,15 @@ class Asistencia extends Model
      *
      * @var array
      */
-    protected $fillable = ['fecha','miembro_id'];
+    protected $fillable = ['fecha','becario_id'];
 
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasOne
      */
-    public function miembro()
+    public function becario()
     {
-        return $this->hasOne('App\Models\Miembro', 'id', 'miembro_id');
+        return $this->hasOne('App\Models\Becario', 'id', 'becario_id');
     }
     
 

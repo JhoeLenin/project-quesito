@@ -14,7 +14,7 @@
                             <span class="card-title">{{ __('Detalle de la asistencia') }} Asistencia</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-primary" href="{{ route('asistencias.index') }}"> {{ __('Back') }}</a>
+                            <a class="btn btn-primary" href="{{ route('asistencias.index') }}"> {{ __('Volver') }}</a>
                         </div>
                     </div>
 
@@ -25,8 +25,8 @@
                             {{ $asistencia->fecha }}
                         </div>
                         <div class="form-group">
-                            <strong>Miembro Id:</strong>
-                            {{ $asistencia->miembro->nombre_apellido }}
+                            <strong>Becario:</strong>
+                            {{ $asistencia->becario->nombre_apellido }}
                         </div>
 
                     </div>

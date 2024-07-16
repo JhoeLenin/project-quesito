@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Barryvdh\DomPDF\Facade\Pdf;
 
 use App\Models\Asistencia;
-use App\Models\Miembro;
+use App\Models\Becario;
 use Illuminate\Http\Request;
 
 /**
@@ -56,8 +56,8 @@ class AsistenciaController extends Controller
     public function create()
     {
         $asistencia = new Asistencia();
-        $miembros = Miembro::pluck('nombre_apellido', 'id');
-        return view('asistencia.create', compact('asistencia', 'miembros'));
+        $becarios = Becario::pluck('nombre_apellido', 'id');
+        return view('asistencia.create', compact('asistencia', 'becarios'));
     }
 
     /**
@@ -98,8 +98,8 @@ class AsistenciaController extends Controller
     public function edit($id)
     {
         $asistencia = Asistencia::find($id);
-        $miembros = Miembro::pluck('nombre_apellido', 'id');
-        return view('asistencia.edit', compact('asistencia', 'miembros'));
+        $becarios = Becario::pluck('nombre_apellido', 'id');
+        return view('asistencia.edit', compact('asistencia', 'becarios'));
     }
 
     /**

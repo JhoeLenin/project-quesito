@@ -12,16 +12,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('miembros', function (Blueprint $table) {
+        Schema::create('becarios', function (Blueprint $table) {
             $table->id();
+            $table->string('codigo', 10)->unique();
+            $table->string('dni', 8)->unique();
             $table->string('nombre_apellido', 255);
             $table->string('direccion', 255);
             $table->string('telefono', 100);
             $table->string('fecha_nacimiento', 100);
-            $table->string('genero', 50);
             $table->string('email', 255)->unique();
             $table->string('estado', 5);
-            $table->string('ministerio', 255);
             $table->text('fotografia')->nullable();
             $table->string('fecha_ingreso', 50);
 
@@ -35,6 +35,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('miembros');
+        Schema::dropIfExists('becarios');
     }
 };

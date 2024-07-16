@@ -3,17 +3,17 @@
 namespace Database\Seeders;
 
 use Illuminate\Support\Str;
-use App\Models\Miembro;
+use App\Models\Becario;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class MiembroSeeder extends Seeder
+class BecarioSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Miembro::factory()->count(100)->create();
+        Becario::factory()->count(100)->create();
     }
 }
