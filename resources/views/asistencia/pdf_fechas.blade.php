@@ -46,6 +46,7 @@
 
 <body>
     <h2 class="mb-4" style="text-align: center">Reporte de asistencias</h2>
+    <p style="text-align: center"><strong>Desde:</strong> {{ $fi }} <strong>Hasta:</strong> {{ $ff }}</p>
 
     <table class="table table-bordered table-striped">
         <thead class="thead-dark">

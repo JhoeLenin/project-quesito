@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Asistencia; // Asumiendo que tienes un modelo Asistencia
-use App\Models\Becario; // Asumiendo que tienes un modelo Becario
+use App\Models\Asistencia; 
+use App\Models\Becario; 
 
 class ReporteController extends Controller
 {

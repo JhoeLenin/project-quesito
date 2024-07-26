@@ -47,12 +47,8 @@ class AsistenciaController extends Controller
 
         $asistencias = Asistencia::where('fecha','>=',$fi)->where('fecha','<=',$ff)->get();
 
-        // $fechas = request()->all();
-        // return response()->json($fechas);
-
-        $pdf = Pdf::loadView('asistencia.pdf_fechas', ['asistencias' => $asistencias]);
+        $pdf = Pdf::loadView('asistencia.pdf_fechas', ['asistencias' => $asistencias, 'fi' => $fi, 'ff' => $ff]);
         return $pdf->stream();
-        // return view('asistencia.pdf_fechas',['asistencias'=>$asistencias]);
     }
     public function create()
     {
