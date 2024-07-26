@@ -44,6 +44,17 @@
                                                 <input type="email" name="email" value="{{ old('email') }}" class="form-control" required>
                                             </div>
                                         </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                            <label for="escuela_id">Escuela:</label>
+                                            <select class="form-control" id="escuela_id" name="escuela_id" required>
+                                                    <option value="" disabled selected>Buscar EP</option>
+                                                    @foreach($escuelas as $escuela)
+                                                        <option value="{{ $escuela->id }}">{{ $escuela->nombre_escuela }}</option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-3">

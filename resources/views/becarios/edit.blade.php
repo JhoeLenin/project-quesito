@@ -50,6 +50,19 @@
                                                     class="form-control" required>
                                             </div>
                                         </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                            <label for="">Escuela</label>
+                                                <select name="escuela_id" class="form-control" required>
+                                                    @foreach($escuelas as $escuela)
+                                                        <option value="{{ $escuela->id }}" 
+                                                            {{ $becario->escuela_id == $escuela->id ? 'selected' : '' }}>
+                                                            {{ $escuela->nombre_escuela }}
+                                                        </option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
+                                        </div>
 
                                         <div class="col-md-3">
                                             <div class="form-group">

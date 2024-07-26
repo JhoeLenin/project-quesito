@@ -32,6 +32,7 @@
                                     <th>Código</th>
                                     <th>DNI</th>
                                     <th>Nombres y Apellidos</th>
+                                    <th>E.P.</th>
                                     <th>Telefono</th>
                                     <th>Email</th>
                                     <th>Estado</th>
@@ -47,6 +48,7 @@
                                         <td>{{ $becario->codigo }}</td>
                                         <td>{{ $becario->dni }}</td>
                                         <td>{{ $becario->nombre_apellido }}</td>
+                                        <td>{{ $becario->escuela->nombre_escuela }}</td>
                                         <td>{{ $becario->telefono }}</td>
                                         <td>{{ $becario->email }}</td>
                                         <td>

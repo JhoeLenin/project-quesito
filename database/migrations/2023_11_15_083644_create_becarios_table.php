@@ -24,9 +24,12 @@ return new class extends Migration
             $table->string('estado', 5);
             $table->text('fotografia')->nullable();
             $table->string('fecha_ingreso', 50);
-
+            $table->bigInteger('escuela_id')->unsigned();
+            
 
             $table->timestamps();
+
+            $table->foreign('escuela_id')->references('id')->on('escuelas')->onDelete('cascade');
         });
     }
 

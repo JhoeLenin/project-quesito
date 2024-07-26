@@ -6,17 +6,17 @@ use App\Models\Becario;
 use App\Models\User;
 use App\Models\Asistencia;
 
-use App\Models\Ministerio;
+use App\Models\Escuela;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
     public function index()
     {
-        $ministerios = Ministerio::all();
+        $escuelas = Escuela::all();
         $becarios = Becario::all();
         $usuarios = User::all();
         $asistencias = Asistencia::all();
-        return view('index', ['ministerios' => $ministerios,'becarios' => $becarios,'usuarios' => $usuarios,'asistencias' => $asistencias]);
+        return view('index', ['escuelas' => $escuelas,'becarios' => $becarios,'usuarios' => $usuarios,'asistencias' => $asistencias]);
     }
 }

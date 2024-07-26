@@ -21,7 +21,7 @@ class BecarioFactory extends Factory
         return [
             'codigo' => strtoupper(Str::random(10)), // Generar un código único de 12 caracteres al azar
             'dni' => $this->generateUniqueDni(), // Generar un DNI único de 8 números
-            'nombre_apellido' => $this->faker->name,
+            'nombre_apellido' => strtoupper($this->faker->name),
             'direccion' => $this->faker->address,
             'telefono' => $this->faker->numerify('9########'), // Número de teléfono con 9 dígitos
             'fecha_nacimiento' => $this->faker->date($format = 'Y-m-d', $max = 'now'),
@@ -29,6 +29,7 @@ class BecarioFactory extends Factory
             'estado' => '1',
             'fotografia' => '',
             'fecha_ingreso' => $this->faker->date($format = 'Y-m-d'),
+            'escuela_id' => $this->faker->numberBetween(1, 10),
         ];
     }
 

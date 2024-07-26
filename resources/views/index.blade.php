@@ -4,23 +4,23 @@
 
         <h1>Página principal</h1>
         <div class="row">
-        @can('asd')
+        @can('escuelas')
             <div class="col-lg-3 col-6">
                 <div class="small-box bg-info">
                     <div class="inner">
                         
-                        <?php $contador_de_ministerio = 0; ?>
-                        @foreach ($ministerios as $ministerio)
-                            <?php $contador_de_ministerio = $contador_de_ministerio + 1; ?>
+                        <?php $contador_de_escuelas = 0; ?>
+                        @foreach ($escuelas as $escuela)
+                            <?php $contador_de_escuelas = $contador_de_escuelas + 1; ?>
                         @endforeach
 
-                        <h3><?= $contador_de_ministerio ?></h3>
-                        <p>Ministerios</p>
+                        <h3><?= $contador_de_escuelas ?></h3>
+                        <p>Escuelas</p>
                     </div>
                     <div class="icon">
                         <i class="bi bi-building"></i>
                     </div>
-                    <a href="{{ url('ministerios') }}" class="small-box-footer">Más información <i
+                    <a href="{{ url('escuelas') }}" class="small-box-footer">Más información <i
                             class="fas fa-arrow-circle-right"></i></a>
                 </div>
 

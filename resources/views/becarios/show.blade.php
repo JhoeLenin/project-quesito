@@ -45,6 +45,13 @@
                                                 value="{{ $becario->email }}" disabled>
                                         </div>
                                     </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="">Escuela</label>
+                                            <input type="escuela_id" name="escuela_id" class="form-control"
+                                                value="{{ $becario->escuela->nombre_escuela }}" disabled>
+                                        </div>
+                                    </div>
 
                                     <div class="col-md-3">
                                         <div class="form-group">

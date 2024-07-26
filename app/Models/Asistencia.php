@@ -13,7 +13,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property $created_at
  * @property $updated_at
  *
- * @property Miembro $becario
+ * @property Becario $becario
  * @package App
  * @mixin \Illuminate\Database\Eloquent\Builder
  */
@@ -32,7 +32,7 @@ class Asistencia extends Model
      *
      * @var array
      */
-    protected $fillable = ['fecha','becario_id'];
+    protected $fillable = ['fecha','estado','becario_id'];
 
 
     /**

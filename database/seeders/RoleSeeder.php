@@ -29,7 +29,7 @@ class RoleSeeder extends Seeder
         Permission::create(['name' => 'pdf_fechas'])->syncRoles([$admin, $registrador]);
         Permission::create(['name' => 'home'])->syncRoles([$admin, $registrador]);
         Permission::create(['name' => 'becarios'])->syncRoles([$admin]);
-        Permission::create(['name' => 'ministerios'])->syncRoles([$admin]);
+        Permission::create(['name' => 'escuelas'])->syncRoles([$admin]);
         Permission::create(['name' => 'usuarios'])->syncRoles([$admin]);
         Permission::create(['name' => 'asistencias'])->syncRoles([$admin, $registrador]);
 

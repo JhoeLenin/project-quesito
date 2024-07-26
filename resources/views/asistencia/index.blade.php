@@ -11,19 +11,15 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="" style="display: flex; justify-content: space-between; align-items: center;">
-
-                            
-                                <h2 class="card-title"><b>Asistencias registradas</b></h2>
-                            
-
+                            <h2 class="card-title"><b>Asistencias registradas</b></h2>
                             <div class="float-right">
-                                <a href="{{ route('asistencias.create') }}" class="btn btn-primary btn-sm float-right"
-                                    data-placement="left">
+                                <a href="{{ route('asistencias.create') }}" class="btn btn-primary btn-sm float-right" data-placement="left">
                                     <h2 class="card-title">Nueva asistencia</h2>
                                 </a>
                             </div>
                         </div>
                     </div>
+
                     @if ($message = Session::get('success'))
                         <div class="alert alert-success">
                             <p>{{ $message }}</p>
@@ -38,9 +34,8 @@
                                         <th>Nro</th>
                                         <th>Fecha</th>
                                         <th>Código</th>
-
+                                        <th>Estado</th>
                                         <th>Miembro</th>
-
                                         <th>Acciones</th>
                                     </tr>
                                 </thead>
@@ -48,28 +43,33 @@
                                     @foreach ($asistencias as $asistencia)
                                         <tr>
                                             <td>{{ ++$i }}</td>
-                                            
                                             <td>{{ $asistencia->fecha }}</td>
                                             <td>{{ $asistencia->becario->codigo }}</td>
+                                            <td>
+                                                @if ($asistencia->estado == 1)
+                                                    <i class="fa fa-check" style="color: green;"></i> <!-- Check para estado 1 -->
+                                                @else
+                                                    <i class="fa fa-times" style="color: red;"></i> <!-- Aspa para estado 0 -->
+                                                @endif
+                                            </td>
                                             <td>{{ $asistencia->becario->nombre_apellido }}</td>
                                             <center>
                                                 <td>
-                                                    <form action="{{ route('asistencias.destroy', $asistencia->id) }}"
-                                                        method="POST">
-                                                        <a class="btn btn-sm btn-primary "
-                                                            href="{{ route('asistencias.show', $asistencia->id) }}"><i
-                                                                class="fa fa-fw fa-eye"></i> </a>
-                                                        <a class="btn btn-sm btn-warning"
-                                                            href="{{ route('asistencias.edit', $asistencia->id) }}"><i
-                                                                class="fa fa-fw fa-edit"></i></a>
+                                                    <form action="{{ route('asistencias.destroy', $asistencia->id) }}" method="POST">
+                                                        <a class="btn btn-sm btn-primary" href="{{ route('asistencias.show', $asistencia->id) }}">
+                                                            <i class="fa fa-fw fa-eye"></i>
+                                                        </a>
+                                                        <a class="btn btn-sm btn-warning" href="{{ route('asistencias.edit', $asistencia->id) }}">
+                                                            <i class="fa fa-fw fa-edit"></i>
+                                                        </a>
                                                         @csrf
                                                         @method('DELETE')
-                                                        <button type="submit" onclick="return confirm('¿Está seguro que desea borrar este registro?')" class="btn btn-danger btn-sm"><i
-                                                                class="fa fa-fw fa-trash"></i> </button>
+                                                        <button type="submit" onclick="return confirm('¿Está seguro que desea borrar este registro?')" class="btn btn-danger btn-sm">
+                                                            <i class="fa fa-fw fa-trash"></i>
+                                                        </button>
                                                     </form>
                                                 </td>
                                             </center>
-
                                         </tr>
                                     @endforeach
                                 </tbody>
@@ -81,6 +81,7 @@
             </div>
         </div>
     </div>
+
     <script>
     $(function () {
         $("#example1").DataTable({
@@ -121,16 +122,13 @@
                 },{
                     text: 'Imprimir',
                     extend: 'print'
-                }
-                ]
-            },
-                {
-                    extend: 'colvis',
-                    text: 'Visor de columnas',
-                    collectionLayout: 'fixed three-column'
-                }
-            ],
+                }]
+            }, {
+                extend: 'colvis',
+                text: 'Visor de columnas',
+                collectionLayout: 'fixed three-column'
+            }],
         }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
     });
-</script>
+    </script>
 @endsection

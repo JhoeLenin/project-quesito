@@ -244,7 +244,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         @endcan
 
                         
-                        @can('asd')
+                        @can('escuelas')
                             <li class="nav-item">
                                 <a href="#" class="nav-link active">
                                     <i class="nav-icon fas">
@@ -253,21 +253,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                                     </i>
                                     <p>
-                                        Sedes
+                                        Escuelas
                                         <i class="right fas fa-angle-left"></i>
                                     </p>
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
-                                        <a href="{{ url('ministerios/create') }}" class="nav-link">
+                                        <a href="{{ url('escuelas/create') }}" class="nav-link">
                                             <i class="far fa-circle nav-icon"></i>
-                                            <p>Nueva Sede</p>
+                                            <p>Nueva Escuela</p>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="{{ url('ministerios') }}" class="nav-link">
+                                        <a href="{{ url('escuelas') }}" class="nav-link">
                                             <i class="bi bi-building"></i>
-                                            <p>Lista de Sedes</p>
+                                            <p>Lista de Escuelas</p>
                                         </a>
                                     </li>
                                 </ul>

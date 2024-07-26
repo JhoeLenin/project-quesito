@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('asistencias', function (Blueprint $table) {
             $table->id();
             $table->date('fecha');
+            $table->boolean('estado')->default(0);
             $table->bigInteger('becario_id')->unsigned();
             $table->timestamps();
             $table->foreign('becario_id')->references('id')->on('becarios')->onDelete('cascade');

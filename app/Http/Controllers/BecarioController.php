@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Becario;
+use App\Models\Escuela; // Importar el modelo Escuela
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Facades\DB;
 
 class BecarioController extends Controller
 {
@@ -18,7 +18,8 @@ class BecarioController extends Controller
 
     public function create()
     {
-        return view('becarios.create');
+        $escuelas = Escuela::all(); // Obtener todas las escuelas
+        return view('becarios.create', compact('escuelas'));
     }
 
     public function store(Request $request)
@@ -31,6 +32,7 @@ class BecarioController extends Controller
             'telefono' => 'required',
             'fecha_nacimiento' => 'required',
             'email' => 'required|unique:becarios,email',
+            'escuela_id' => 'required|exists:escuelas,id' // Validar que la escuela exista
         ]);
 
         $becario = new Becario();
@@ -42,6 +44,7 @@ class BecarioController extends Controller
         $becario->fecha_nacimiento = $request->fecha_nacimiento;
         $becario->email = $request->email;
         $becario->estado = '1';
+        $becario->escuela_id = $request->escuela_id; // Asignar escuela_id
 
         if ($request->hasFile('fotografia')) {
             $becario->fotografia = $request->file('fotografia')->store('fotografias_becarios', 'public');
@@ -62,7 +65,8 @@ class BecarioController extends Controller
     public function edit($id)
     {
         $becario = Becario::findOrFail($id);
-        return view('becarios.edit', ['becario' => $becario]);
+        $escuelas = Escuela::all(); // Obtener todas las escuelas
+        return view('becarios.edit', ['becario' => $becario, 'escuelas' => $escuelas]);
     }
 
     public function update(Request $request, $id)
@@ -75,6 +79,7 @@ class BecarioController extends Controller
             'telefono' => 'required',
             'fecha_nacimiento' => 'required',
             'email' => 'required|unique:becarios,email,'.$id,
+            'escuela_id' => 'required|exists:escuelas,id' // Validar que la escuela exista
         ]);
 
         $becario = Becario::find($id);
@@ -86,6 +91,7 @@ class BecarioController extends Controller
         $becario->fecha_nacimiento = $request->fecha_nacimiento;
         $becario->email = $request->email;
         $becario->estado = '1';
+        $becario->escuela_id = $request->escuela_id; // Asignar escuela_id
 
         if ($request->hasFile('fotografia')) {
             Storage::delete('public/' . $becario->fotografia);
