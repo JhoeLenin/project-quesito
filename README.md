@@ -15,9 +15,8 @@ Este proyecto requiere cumplir con los siguientes requisitos para funcionar corr
 ### Requisitos de Software
 
 1. **Laravel**: Versión 9.x o superior
-3. **PostgreSQL**: Versión 12.x o superior (para la base de datos)
-4. **Bootstrap**: Versión 4.x o superior (para el frontend)
-5. **JavaScript Libraries**:
+2. **Bootstrap**: Versión 4.x o superior (para el frontend)
+3. **JavaScript Libraries**:
    - **jQuery**: Para facilitar el manejo de eventos y DOM
    - **DataTables**: Para tablas interactivas
    - **SweetAlert2**: Para las alertas
